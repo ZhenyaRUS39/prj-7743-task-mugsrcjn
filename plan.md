@@ -1,8 +1,9 @@
-# Plan: prj-7743-task-mugsrcjn
+# Plan: task-mugsrcjn
 
 **Project:** `PRJ-9825`  
 **Task ID:** `task-mugsrcjn`  
 **Repo:** `prj-7743-task-mugsrcjn`  
+**Progress:** 1/3 subtasks done
 
 ## Summary
 
@@ -10,30 +11,27 @@
 
 ## Subtasks
 
-### 1. Создать структуру репозитория
+### ❌ 1. Создать структуру репозитория
 
 - **ID:** `sub-1`
 - **Profile:** `20razrab1`
-- **Tester:** `TBD`
-- **Status:** `pending`
+- **Status:** `failed`
 - **Description:** Создать новый репозиторий prj-7743-task-mugsrcjn, добавить README.md с описанием задачи и базовую структуру проекта (package.json или requirements.txt).
 - **Test plan:** Репозиторий создан на GitHub, клонируется локально, README.md содержит описание задачи HTML escape
 
-### 2. Реализовать HTML escape функцию с unit-тестами
+### ⬜ 2. Реализовать HTML escape функцию с unit-тестами
 
 - **ID:** `sub-2`
 - **Profile:** `30razrab2`
-- **Tester:** `TBD`
 - **Status:** `pending`
 - **Description:** Написать функцию html_escape(s), которая заменяет &, <, >, ", ' на HTML-entities (&amp;, &lt;, &gt;, &quot;, &#x27;). Покрыть unit-тестами: пустая строка, строка без спецсимволов, все спецсимволы, смешанный текст, Unicode.
 - **Test plan:** pytest/npm test зелёный, покрытие ≥90% для функции html_escape, все кейсы из описания проходят
 - **Dependencies:** `sub-1`
 
-### 3. Финальная проверка и diff
+### ⬜ 3. Финальная проверка и diff
 
 - **ID:** `sub-3`
 - **Profile:** `20razrab1`
-- **Tester:** `TBD`
 - **Status:** `pending`
 - **Description:** Запустить полный test suite, убедиться что нет регрессий, сформировать diff против main и передать ревьюверу.
 - **Test plan:** git diff origin/main..HEAD --stat показывает только ожидаемые файлы, все тесты зелёные, diff отправлен ревьюверу
